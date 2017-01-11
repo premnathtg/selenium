@@ -3,7 +3,7 @@ language: none
 build:
   ci:
     - echo 'CI Running'
-    - export IMAGE_NAME=7275-9846-5959.dkr.ecr.us-east-1.amazonaws.com/selenium
+    - export IMAGE_NAME=727598465959.dkr.ecr.us-east-1.amazonaws.com/selenium
     - chmod 777 build.sh
     - ./build.sh
   post_ci:
