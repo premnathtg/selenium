@@ -4,8 +4,10 @@ build:
   ci:
     - echo 'CI Running'
     - export IMAGE_NAME=7275-9846-5959.dkr.ecr.us-east-1.amazonaws.com/selenium
+    - chmod 777 build.sh
     - ./build.sh
   post_ci:
+    - chmod 777 push.sh
     - ./push.sh
 
 branches:
